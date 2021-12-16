@@ -20,3 +20,4 @@ OpenZeppelin 3.4
 Solidity Compiler
 Truffle v3.5
 Remix
+https://marvelousnfts.com/white-paper
