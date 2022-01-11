@@ -65,7 +65,7 @@ contract MarvelousNFT_PoS is ERC20Burnable, ERC20Pausable, AccessControl, Access
 
         maximumSupply = 275000000 * (10 ** 18);
         initialSupply = 275000000 * (10 ** 18);
-        minimumSupply = 100000000 * (10 ** 18);
+        minimumSupply = 50000000 * (10 ** 18);
 
         _initializeEIP712(name_);
     }
