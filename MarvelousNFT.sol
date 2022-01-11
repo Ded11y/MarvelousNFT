@@ -134,14 +134,13 @@ contract MarvelousNFT is AccessControl, ERC20Burnable, ERC20Pausable, AccessCont
     }
 
     function updateBurnRate(uint256 _newRate) external only(CREATOR_ROLE) {
-        require(_newRate >= 0, "MarvelousNFT: Burn rate must be equal or greater than 0.");
         require(_newRate <= 800, "MarvelousNFT: Burn rate must be equal or less than 800.");
         burnRate = _newRate;
 
         emit UpdateBurnRate(burnRate);
     }
 
-    function isWhitelisted(address _address) public view returns(bool) {
+    function isWhitelisted(address _address) external view returns(bool) {
         return whitelisted[_address];
     }
 
