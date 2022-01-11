@@ -57,7 +57,7 @@ contract MarvelousNFT is AccessControl, ERC20Burnable, ERC20Pausable, AccessCont
 
         maximumSupply = 275000000 * (10 ** 18);
         initialSupply = 275000000 * (10 ** 18);
-        minimumSupply = 100000000 * (10 ** 18);
+        minimumSupply = 50000000 * (10 ** 18);
 
         _mint(msg.sender, initialSupply);
         _initializeEIP712(name_);
